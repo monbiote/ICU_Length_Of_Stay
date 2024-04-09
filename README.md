@@ -1,4 +1,4 @@
-# ICU Length of Stay Prediction
+# ICU Length of Stay Prediction via Neural Networks and Ensemble Methods
 
 ## By Edward Monbiot
 
