@@ -5,16 +5,18 @@ This project utilizes neural network and ensemble models to predict the length o
 
 ## Data Description
 - **Source:** MIMIC-III Database, encompassing over forty thousand patients from Beth Israel Deaconess Medical Center's critical care units (2001-2012).
+-  Train, test and metadata datasets
 - **Features:**
   - Vital signs and general characteristics (age, gender, etc.) at the time of ICU admission.
   - Disease codes (`ICD9_diagnosis`) indicating primary and secondary conditions.
   - Exclusions: Features not known on the first day of ICU admission.
-- **Target Variable:** Length of stay (LOS) in the ICU.
 
-## Data Processing
-- Cleaning and normalizing patient data.
+## Data Processing (same process for Neural Network and Ensembles)
+- Merge metadata with train and test sets
+- Exploratory Data Analysis
+- Cleaning, normalizing and imputing patient data: e.g. Setting max age of 93 for extreme DOB data, simply ethnicity add "WHITE - BRAZILIAN" to "WHITE", Merge 'OTHER' religion into 'UNSPECIFIED' religion
 - Handling missing values and outliers.
-- Feature engineering to enhance model performance.
+- Define Numerical and Categorical Columns
 
 ## Models
 1. **Neural Network Model:**
